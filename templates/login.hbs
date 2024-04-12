@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .main{
+        border: 2px solid black;
+        height: auto;
+        width: 30%;
+        background-color: rgb(9, 194, 231);
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .detail input{
+        height: 30px;
+        width: 70%;
+        margin: 5px;
+        border: none;
+      }
+      .detail input:nth-child(5){
+        background-color: red;
+        width: 40%;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <h2>Log In</h2>
+    <form class="detail" action="/login" method="post">
+      <input type="text" name="name" placeholder="Name" /> <br>
+      <input type="password" name="password" placeholder="Password" /> <br>
+      <input type="submit" />
+
+    </form>
+    <a href="/signup">Make a new account</a>
+
+    </div>
+  </body>
+</html>
